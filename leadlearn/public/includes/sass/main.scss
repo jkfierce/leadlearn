@@ -1,0 +1,125 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+.btn .btn-navbar {
+	margin-right: 20px;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+	position: static;
+}
+
+.nav {
+	padding-left: 10px;
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+	    width: 700px;
+	    margin: auto;
+	    margin-top: 30px;
+	    border-radius: 5px;
+
+	    @media screen and (max-width: 700px) {
+	    	width:100%;
+			margin: 0px;
+			border-radius: 0px;
+			padding: 0px;
+	    }
+}
+
+.content .row-fluid {
+	width: 696px;
+	margin:auto;
+	top: -10px;
+	padding-top: 20px;
+	margin-top: -5px;
+	border: 2px solid #252525;
+	z-index: -5;
+	background-color: #FFF;
+	color: #333;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+	.span8 {
+		padding: 0px 10px 0px;
+		margin-bottom: 10px;
+		border-right: 1px solid #333;
+		padding-left: 10px;
+	}
+
+
+    @media screen and (max-width: 700px) {
+    	width:100%;
+		margin: none;
+		border-radius: 0px;
+		padding: 0px;
+		border:none;
+
+		.span4 {
+    		display:none;
+    	}
+    }	
+
+    .scroll {
+    	overflow:auto;
+    }
+
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+	@media screen and (max-width: 979px) {
+		margin: 0px;
+		margin-bottom: 20px;
+	}
+}
+
+.container .brand {
+	margin-left: -10px;
+}
+
+.checkboxes {
+	display: block;
+	padding: 10px;
+	font-size: 16px;
+	width: 200px;
+	background-color: #333;
+	color: #FFF;
+	border-radius: 5px;
+	margin: 5px 0px;
+
+	label {
+		margin: auto;
+		display: inline-block;
+	}
+
+	input {
+		margin: 0px;
+		float:right;
+	}
+}
+
+.table {
+	overflow:auto;
+	height: 200px;
+	max-width: 100%;
+}
+
+p {
+	font-size: 14px;
+	padding-bottom: 15px;
+	line-height: 20px;
+}
+
+h3 {
+	font-size: 24.5px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	line-height: 40px;
+}
+
+body {
+	background: #fff url("/includes/img/background.jpg") repeat
+}
