@@ -12,3 +12,7 @@ Route::get('tables', function() {
 Route::get('attendance', function() {
 	return View::make('attendance');
 });
+
+Route::get('test', function() {
+	return 'does this sync how fast?';
+});
